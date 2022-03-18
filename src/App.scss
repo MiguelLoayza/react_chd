@@ -1,36 +1,118 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+$fondo : #222528;
+$borde : rgb(224, 22, 22);
+$text_colo : #94979A;
+
+body{
+  background: $fondo;
+}
 
 * {
+  position: relative;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: 'Rubik', sans-serif;
-}
-
-$fondo : #2c3e50;
-$borde : rgb(224, 22, 22);
-$text_colo : aliceblue;
-
 .flex {
   display: flex;
+  position:relative
 }
 
 .navbar {
+  position: absolute;
   background-color: $fondo;
-  width: calc(100vw - 14rem) ;
   padding: 1rem 2rem;
-  border-bottom: 10px solid $borde ;
+  border-bottom: 1px solid $borde ;
   color: $text_colo;
   text-align: left;
 }
 
+.vista{
+  float:left;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: calc(100vw - 360px) ;
+  height: calc(100vh - 192px);
+  //height: 704px;
+  left: 296px;
+  top: 192px;
+}
+
+.logo-ravn{
+  background: #2C2F33;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 20px);
+  top: 32px;
+}
+
+.sidebar2{
+  position: absolute;
+  width: 232px;
+  height: calc(100vh - 64px);
+  //height: 836px;
+  left: 32px;
+  top: 32px;
+
+  /* neutral.4 */
+
+  background: #2C2F33;
+  border-radius: 24px;
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    left: 0px;
+    top: 96px;
+    background: #2C2F33;
+    list-style: none;
+    padding: 1rem 2rem;
+    li {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px 0px 0px 16px;
+      color: #94979A;
+      position: static;
+      left: 0%;
+      right: 0%;
+      top: 53.33%;
+      bottom: 0%;
+
+
+      /* Inside auto layout */
+
+      flex: none;
+      order: 2;
+      flex-grow: 0;
+      margin: 8px 0px;
+      background: #2C2F33;
+      margin-bottom: 1rem;
+      a {
+        background: #2C2F33;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+
+
+
 .sidebar{
+  background-color: #2C2F33;
   width: 14rem;
   height: 100vh;
-  border-right: 3px solid $borde;
+  border-right: 1px solid $borde;
   ul {
     list-style: none;
     padding: 1rem 2rem;

@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import White from '../img/White.png';
 
 
-const Sidebar =() => {
+const Menubar =() => {
     return (
-        <div className="sidebar2">
 
-            <div className="logo-ravn">
-                <img src={White}/>
+        <div className="sidebar2">
+            <div className="icono-ravn">
+                <img src={White} />
             </div>
 
             <ul>
@@ -19,9 +19,9 @@ const Sidebar =() => {
                 </li>
                 
             </ul>    
-
         </div>
+
     )    
 }
 
-export default Sidebar
+export default Menubar;

@@ -1,3 +1,7 @@
+import Box from '@mui/material/Box';
+import { green } from '@mui/material/colors';
+import Icon from '@mui/material/Icon';
+
 const Navbar =() => {
     return (
         <div className="navbar">
@@ -13,12 +17,21 @@ const Navbar =() => {
             </div>
 
             <div>
-                <p className="btn btn-primary">Prueba 2</p>
+                <Box sx={{
+                    '& > :not(style)': {
+                        m: 2,
+                        },
+                    }}
+                    >
+                    <Icon>add_circle</Icon>
+                    
+                </Box>
+
             </div>      
-            
+
         </div>
     )    
 }
 
-export default Navbar
+export default Navbar;
 
